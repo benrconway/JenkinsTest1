@@ -2,6 +2,9 @@
 
 echo "Trying to build the project"
 set -x
-npm install
-npm start &
+nodejs('testjs'){
+  server/npm install
+  server/npm start &
+}
+
 set +x
