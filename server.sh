@@ -3,8 +3,8 @@
 echo "Trying to build the project"
 set -x
 
-  server/npm install
-  server/npm start &
+  code/server/npm install
+  code/server/npm start &
 
 
 set +x
