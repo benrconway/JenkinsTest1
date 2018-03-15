@@ -19,7 +19,7 @@ pipeline{
               sh "cd test"
               nodejs('testJS'){
                 sh 'npm install'
-                sh 'mocha test'
+                sh 'npm test'
               }
 
             }
