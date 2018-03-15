@@ -11,7 +11,7 @@ pipeline{
               dir('test'){
                 git url: 'https://github.com/benrconway/JenkinsTest2.git'
               }
-                sh 'ls'
+                sh 'npm install'
 
 
             }
