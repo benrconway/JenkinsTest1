@@ -3,6 +3,7 @@ pipeline{
     agent any
     environment {
         CI='true'
+
     }
 
     stages {
@@ -11,7 +12,9 @@ pipeline{
               dir('test'){
                 git url: 'https://github.com/benrconway/JenkinsTest2.git'
               }
+              nodejs('testJS'){
                 sh 'npm install'
+              }
 
 
             }
