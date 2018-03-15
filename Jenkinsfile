@@ -14,12 +14,12 @@ pipeline{
               }
               nodejs('testJS'){
                 sh 'npm install'
+                sh 'npm start'
               }
-              sh 'cd test'
+              sh "cd test"
               nodejs('testJS'){
                 sh 'npm install'
-                sh '../npm start'
-                sh 'mocha test.js'
+                sh 'mocha test'
               }
 
             }
