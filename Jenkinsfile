@@ -16,11 +16,16 @@ pipeline{
                 sh 'npm install'
                 sh 'npm start'
               }
+              sh 'pwd'
               sh "cd test"
-              nodejs('testJS'){
-                sh 'npm install'
-                sh 'npm test'
-              }
+              sh 'pwd'
+              sh 'ls -a'
+              sh 'curl -f http://0.0.0.0:3000/api || echo "Hello world"'
+
+              // nodejs('testJS'){
+              //   sh 'npm install'
+              //   sh 'npm test'
+              // }
 
             }
         }
