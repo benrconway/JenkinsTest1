@@ -22,7 +22,12 @@ pipeline{
                 }
               }
 
-              
+              post{
+                always {
+                  emailext attachLog: true, returnStdout: true, body: 'Here is the log and testing it works.', subject: 'Test email', to: 'ben.conway@bemo.co'
+
+                }
+              }
               // sh 'curl -f http://0.0.0.0:3000/api || echo "Hello world"'
               // sh './test/test.sh'
 
