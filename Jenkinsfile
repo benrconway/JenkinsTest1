@@ -8,7 +8,9 @@ pipeline{
     stages {
         stage('Tests') {
             steps {
-                sh '/usr/local/bin/npm -version'
+                sh 'ls -a'
+                sh '~./usr/local/bin/npm -version'
+
 
             }
         }
