@@ -9,7 +9,7 @@ pipeline{
         stage('Tests') {
             steps {
                 sh 'pwd'
-                sh '~./usr/local/bin/npm -version'
+                sh '~./usr/local/bin/ls -a'
 
 
             }
