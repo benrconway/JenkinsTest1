@@ -8,7 +8,7 @@ pipeline{
     stages {
         stage('Tests') {
             steps {
-                sh 'ls -a'
+                sh 'pwd'
                 sh '~./usr/local/bin/npm -version'
 
 
