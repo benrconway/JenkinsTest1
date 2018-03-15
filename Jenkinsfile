@@ -8,8 +8,10 @@ pipeline{
     stages {
         stage('Tests') {
             steps {
-                sh 'pwd'
-                sh '~./usr/local/bin/ls -a'
+              dir('test'){
+                git url: 'https://github.com/benrconway/JenkinsTest2.git'
+              }
+                sh 'ls'
 
 
             }
