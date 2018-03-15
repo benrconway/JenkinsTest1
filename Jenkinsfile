@@ -19,7 +19,7 @@ pipeline{
               sh 'pwd'
               sh "cd test"
               sh 'pwd'
-              sh 'ls -a'
+              sh 'ls -al'
               sh 'curl -f http://0.0.0.0:3000/api || echo "Hello world"'
 
               // nodejs('testJS'){
