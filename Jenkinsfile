@@ -15,12 +15,14 @@ pipeline{
               nodejs('testJS'){
                 sh 'npm install'
                 sh 'npm start'
+
               }
               sh 'pwd'
               sh "cd test"
               sh 'pwd'
               sh 'ls -al'
               sh 'curl -f http://0.0.0.0:3000/api || echo "Hello world"'
+              sh './test/test.sh'
 
               // nodejs('testJS'){
               //   sh 'npm install'
