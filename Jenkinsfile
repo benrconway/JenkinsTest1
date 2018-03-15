@@ -37,7 +37,7 @@ pipeline{
 
       post{
         always {
-          emailext attachLog: true, body: 'Here is the log and testing it works.', subject: 'Test email', to: 'ben.conway@bemo.co'
+          mail attachLog: true, body: 'Here is the log and testing it works.', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!', to: 'ben.conway@bemo.co'
 
         }
       }
