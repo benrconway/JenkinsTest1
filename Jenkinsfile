@@ -35,10 +35,10 @@ pipeline{
         }
       }
 
-      post{
-        always {
-          mail attachLog: true, body: 'Here is the log and testing it works.', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!', to: 'ben.conway@bemo.co'
-
-        }
-      }
+      // post{
+      //   always {
+      //     mail to: 'ben.conway@bemo.co', body: 'Here is the log and testing it works.', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!'
+      //
+      //   }
+      // }
 }
